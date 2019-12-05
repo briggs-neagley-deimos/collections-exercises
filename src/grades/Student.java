@@ -45,5 +45,29 @@ public class Student {
         alyssa.addGrade(100);
         System.out.println(alyssa.getGradeAverage());
 
+        Student kellsey = new Student("Kellsey", grades);
+        System.out.println(kellsey.getName());
+        kellsey.addGrade(30);
+        kellsey.addGrade(45);
+        kellsey.addGrade(90);
+        kellsey.addGrade(80);
+        System.out.println(kellsey.getGradeAverage());
+
+        Student karli = new Student("Karli", grades);
+        System.out.println(karli.getName());
+        karli.addGrade(50);
+        karli.addGrade(60);
+        karli.addGrade(70);
+        karli.addGrade(80);
+        System.out.println(karli.getGradeAverage());
+
+        Student nico = new Student("Nico", grades);
+        System.out.println(nico.getName());
+        nico.addGrade(80);
+        nico.addGrade(75);
+        nico.addGrade(10);
+        nico.addGrade(10);
+        System.out.println(nico.getGradeAverage());
+
     }
 }
