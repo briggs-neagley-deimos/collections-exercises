@@ -7,11 +7,11 @@ public class Student {
 
     private String name;
 
-    static ArrayList<Integer> grades;
+    private ArrayList<Integer> grades;
 
     public Student(String name) {
         this.name = name;
-        grades = new ArrayList<>();
+        this.grades = new ArrayList<>();
     }
 
         // returns the student's name
