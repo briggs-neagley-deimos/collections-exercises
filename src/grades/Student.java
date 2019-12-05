@@ -7,13 +7,12 @@ public class Student {
 
     private String name;
 
-    static ArrayList<Integer> grades = new ArrayList<>();
+    static ArrayList<Integer> grades;
 
-    public Student(String name, ArrayList<Integer> grades) {
+    public Student(String name) {
         this.name = name;
-        this.grades = grades;
+        grades = new ArrayList<>();
     }
-
 
         // returns the student's name
         public String getName(){
@@ -36,16 +35,20 @@ public class Student {
             return gradesAvg;
         }
 
+    public ArrayList<Integer> getGrades() {
+        return this.grades;
+    }
+
     public static void main(String[] args) {
-        Student alyssa = new Student("Alyssa", grades);
+        Student alyssa = new Student("Alyssa");
         System.out.println(alyssa.getName());
-        alyssa.addGrade(35);
+        alyssa.addGrade(50);
         alyssa.addGrade(75);
         alyssa.addGrade(90);
         alyssa.addGrade(100);
         System.out.println(alyssa.getGradeAverage());
 
-        Student kellsey = new Student("Kellsey", grades);
+        Student kellsey = new Student("Kellsey");
         System.out.println(kellsey.getName());
         kellsey.addGrade(30);
         kellsey.addGrade(45);
@@ -53,7 +56,7 @@ public class Student {
         kellsey.addGrade(80);
         System.out.println(kellsey.getGradeAverage());
 
-        Student karli = new Student("Karli", grades);
+        Student karli = new Student("Karli");
         System.out.println(karli.getName());
         karli.addGrade(50);
         karli.addGrade(60);
@@ -61,7 +64,7 @@ public class Student {
         karli.addGrade(80);
         System.out.println(karli.getGradeAverage());
 
-        Student nico = new Student("Nico", grades);
+        Student nico = new Student("Nico");
         System.out.println(nico.getName());
         nico.addGrade(80);
         nico.addGrade(75);
