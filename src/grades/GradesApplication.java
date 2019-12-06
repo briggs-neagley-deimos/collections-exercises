@@ -49,13 +49,13 @@ public class GradesApplication {
 
 
                 if (choosePerson.equalsIgnoreCase("alyssabriggs")) {
-                    System.out.println(alyssa.getName() + " " + alyssa.getGradeAverage());
+                    System.out.println("Student's Name: " + alyssa.getName() + "\nStudent's GPA: " + alyssa.getGradeAverage());
                 } else if (choosePerson.equalsIgnoreCase("kellseyn")) {
-                    System.out.println(kellsey.getName() + " " + kellsey.getGradeAverage());
+                    System.out.println("Student's Name: " + kellsey.getName() + "\nStudent's GPA: " + kellsey.getGradeAverage());
                 } else if (choosePerson.equalsIgnoreCase("karlisteevees")) {
-                    System.out.println(karli.getName() + " " + karli.getGradeAverage());
+                    System.out.println("Student's Name: " + karli.getName() + "\nStudent's GPA: " + karli.getGradeAverage());
                 } else if (choosePerson.equalsIgnoreCase("navirgino")) {
-                    System.out.println(nico.getName() + " " + nico.getGradeAverage());
+                    System.out.println("Student's Name: " + nico.getName() + "\nStudent's GPA: " + nico.getGradeAverage());
                 } else if(choosePerson.equalsIgnoreCase("exit")){
                     break;
                 } else {
